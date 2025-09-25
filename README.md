@@ -53,3 +53,10 @@ python app.py
 5. Open the app in your browser:
 
 http://127.0.0.1:5000/
+
+
+---
+**🤝 Contributing**
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit pull requests
