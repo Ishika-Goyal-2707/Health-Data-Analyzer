@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Data Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<h1>Upload Health Data CSV</h1>
+<form action="/analyze" method="post" enctype="multipart/form-data">
+<input type="file" name="file" required>
+<button type="submit">Analyze</button>
+</form>
+</div>
+</body>
+</html>

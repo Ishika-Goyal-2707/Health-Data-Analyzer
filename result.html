@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Data Results</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<h1>Health Data Analysis</h1>
+
+
+<h2>Summary Statistics</h2>
+{{ summary|safe }}
+
+
+<h2>Steps Over Time</h2>
+<img src="{{ url_for('static', filename='plots/' + steps_chart) }}" alt="Steps Chart">
+
+
+<h2>Calories Burned Over Time</h2>
+<img src="{{ url_for('static', filename='plots/' + calories_chart) }}" alt="Calories Chart">
+
+
+<h2>Heart Rate Distribution</h2>
+<img src="{{ url_for('static', filename='plots/' + hr_chart) }}" alt="Heart Rate Chart">
+</div>
+</body>
+</html>
